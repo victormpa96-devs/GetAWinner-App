@@ -1,0 +1,27 @@
+.editIcon{
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+
+.editIcon:hover{
+    color: orange;
+}
+
+.closesavechangesContainer, .declineconfirmchangesContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.closesavechangesContainer button, .declineconfirmchangesContainer button{
+    width: 50%;
+    margin: 0.5em;
+}
+
+.errorMsgContainer{
+    border: 1px solid tomato;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-bottom: 0.5rem;
+    color: tomato;
+    margin: 0.5em;
+}

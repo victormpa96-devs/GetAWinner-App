@@ -1,0 +1,182 @@
+html, body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;  
+  user-select: none;  
+  background-color: #064663;  
+}
+
+hr{
+  color: #ECB365;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  
+}
+
+#content{
+  display: flex;
+  width: 100%;
+  justify-content: center;  
+}
+
+#logoBannerContainer{
+  padding: 0.3em;
+  height: 50px;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  color: #ECB365;
+  font-weight: bold;
+}
+
+#logoBannerContainer *{
+  height: 80%;
+}
+
+#loginBody, #registerBody{
+  width: 45%;
+  min-width: 490px;
+}
+
+#loginContent, #registerContent, #winnerContent{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  background-color: #041C32;
+  border: 2px solid #ECB365;
+  border-radius: 15px;
+  padding: 1em;
+  height: fit-content;
+  color: wheat;
+} 
+
+@media(max-width: 500px) {
+
+  #loginContent, #registerContent, #winnerContent{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  #inputtextusername, #inputtextpassword, #inputtextrepeatpassword{
+    font-size: 0.85em;
+  }
+
+  #winnerContent{
+    min-width: 418px;
+  }
+
+  #winnerContent header a{
+    font-size: 1.3em;
+  }
+  
+}
+
+#mainContainer{
+  position: relative;
+  width: 100%;
+}
+
+#listCompetitorsContainer{
+  display: flex;
+  justify-content: center;
+}
+
+#listCompetitors{
+  margin: 0.5em;
+  border: 2px solid #ECB365;
+  border-radius: 15px;
+  height: 500px;  
+  background-color: #04293A;
+  width: 50%;
+  min-width: 440px;
+  padding: 0.5em;
+  gap: 0.5rem;
+  overflow-y: scroll;  
+  scrollbar-width: none;  /* Firefox */
+  scrollbar-color: transparent transparent; /* Linux */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+#listCompetitors::-webkit-scrollbar {
+  display: none;
+}
+
+.competitor{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: wheat;
+  border: 2px solid #04293A;
+  border-radius: 20px;
+  color: #041C32;
+  font-weight: 500;
+  font-size: large;
+}
+
+.competitor div{
+  flex-basis: 80%;
+  overflow-x: auto;
+  scrollbar-color: black transparent;
+  scrollbar-width: thin;
+}
+
+.competitor button{
+  border-radius: 15px;
+  border: 2px solid darkred;
+  background-color: firebrick;
+  color: tomato;
+}
+
+#dataWinnerContainer{
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  align-items: center;
+  padding: 1em;
+  margin: 1em;
+  background-color: rgba(245, 222, 179, 0.637);
+  border-radius: 20px;
+  border: 2px solid whitesmoke;
+  color: black;
+}
+
+#dataWinnerContainer img{
+  width: 200px;
+}
+
+#backtohome{
+  color:#0094d8;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button, button label{
+  cursor: pointer;
+}
+
+.errorMsgContainer{
+  border: 1px solid tomato;
+  border-radius: 10px;
+  padding: 0.5em;
+  margin-bottom: 0.5rem;
+  color: tomato;
+  margin: 0.5em;
+}
+

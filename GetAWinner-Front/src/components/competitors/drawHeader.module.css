@@ -1,0 +1,83 @@
+.drawHeaderContainer{
+    display: flex;
+}
+
+.drawconfigContainer{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
+
+.drawconfigContainer{
+    padding: 0.5em;
+    display: flex;
+    gap: 0.5em;
+}
+
+.numWinnersContainer, .typeDrawContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.labelNumWinners, .labelTypeDraw{
+    height: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: gray;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+
+.inputNumWinners, .selectTypeDraw{
+    width: 115px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.getawinner{
+    margin: 0.5em;
+    flex-basis: 50%;
+    border: 2px solid green;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #157347;
+    padding: 0.3rem;
+    color: wheat;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getawinner:hover{
+    background-color: #1e915b;
+}
+
+@media(max-width: 585px) {
+    .drawconfigContainer{
+        flex-basis: 65%;
+    }
+
+    .getawinner{
+        flex-basis: 35%;        
+    }
+
+    .labelNumWinners, .labelTypeDraw{
+        height: fit-content;
+    }
+    
+    .inputNumWinners, .selectTypeDraw{
+        height: 100%;
+    }
+} 
+
+    

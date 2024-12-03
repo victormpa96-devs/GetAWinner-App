@@ -1,0 +1,18 @@
+.inputsContainer{
+    display: flex;
+}
+
+.inputtextCompetitor{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-weight: 400;
+}
+
+.createCompetitorBtn{
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; 
+    width: 40px;   
+}
