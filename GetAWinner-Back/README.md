@@ -9,4 +9,6 @@ On the other hand, for the operation of the APIs, a database will be built with 
 2. Install the dependencies: `npm install`.
 3. Start the development server (in the project directory): `nodemon start`.
 
+### Requirements
 
+**The database requires _MongoDB_ to be installed on the computer to work.**
